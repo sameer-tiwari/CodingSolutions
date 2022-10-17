@@ -4,12 +4,11 @@ import java.io.*;
 public class Solution {
  
     
-    public static boolean isPalin(char[] s,int left ,int right){
-        while(left <right){
-            if(s[left] !=s[right])
+    public static boolean isPalin(char[] arr,int start ,int end){
+        while(start < end){
+            if(arr[start] !=arr[end])
                 return false;
-            left++;
-            right--;
+            start++;    end--;
         }
         return true;
     }
