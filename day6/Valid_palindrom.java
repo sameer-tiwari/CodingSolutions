@@ -19,7 +19,7 @@ public class Solution {
         
          while(start<end){
              if(charArr[start] != charArr[end]){
-                 return isPalin(charArr,start+1,end)                     ||isPalin(charArr,start,end-1);
+                 return isPalin(charArr,start+1,end) || isPalin(charArr,start,end-1);
              }
              start++; end--;
          }
